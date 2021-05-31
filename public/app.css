@@ -1,0 +1,82 @@
+body{
+    color: rgb(255, 238, 238);
+    text-align: center;
+    padding-top: 150px;
+    letter-spacing: 0.1em;
+}
+
+header span{
+    font-weight: 900;
+}
+
+input{
+    width: 70%;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+form{
+    font-size: 23px;
+}
+
+ul{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    color: rgb(81, 92, 92);
+    padding-top: 10px;
+}
+
+li{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li:hover{
+    background-color: rgb(105, 162, 172);
+    border-radius: 4px;
+    color: rgb(5, 10, 8);
+}
+
+li span{
+    opacity: 0;
+    float: right;
+    color: rgba(245, 67, 67, 0.925);
+}
+
+li:hover span{
+    opacity: 1;
+}
+
+li span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.completed span{
+    color: rgb(172, 5, 5);
+}
+
+.completed span:hover{
+    color: red;
+    opacity: 1;
+
+}
+
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+@media only screen and (max-width : 500px)
+{
+    li span{
+        opacity: 1;
+    }
+}
