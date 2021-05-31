@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $.getJSON('/api/todos')
-    .then(addTodos);
+    .then(addTodos)
+    .catch(function(err)
+    {
+        console.log(err);
+    })
 
     
     $("#todotask").keypress(function(event){
