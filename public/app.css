@@ -74,9 +74,25 @@ li span:hover{
     transition: 500ms;
 }
 
+.notifications{
+    width: 70%;
+    margin: auto;
+}
+
+.notification{
+    margin-left: -150%;
+    border-radius: 6px;
+    background-color: rgb(47, 194, 84);
+    margin-right: +150%;
+    padding: 3px;
+}
+
 @media only screen and (max-width : 500px)
 {
     li span{
         opacity: 1;
+    }
+    ul , input , .notifications{
+        width: 100%;
     }
 }
