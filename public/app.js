@@ -50,7 +50,11 @@ function addTodo(todo)
 function addAlert(alert)
 {
     $(".notifications").append(alert);
-    alert.animate({marginLeft : '+=150%' , marginRight : '-=150%'} , 2000).fadeOut(5000);
+    alert.animate({marginLeft : '+=150%' , marginRight : '-=150%'} , 2000);
+    setTimeout(function(){
+        alert.remove();
+    } , 3000);
+    
 }
 
 function successMsg(todoName)
