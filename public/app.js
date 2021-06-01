@@ -50,10 +50,12 @@ function addTodo(todo)
 function addAlert(alert)
 {
     $(".notifications").append(alert);
-    alert.animate({marginLeft : '+=150%' , marginRight : '-=150%'} , 2000);
+    alert.animate({marginLeft : '+=150%' , marginRight : '-=150%'} , 1000);
     setTimeout(function(){
-        alert.remove();
-    } , 3000);
+        alert.slideUp(function(){
+            alert.remove();
+        });
+    } , 4000);
     
 }
 
@@ -94,8 +96,9 @@ function create()
 
 function removeTodo(task)
 {
-    task.hide('slow');
+    task.hide('fast');
     let deleteUrl = "/api/todo/" + task.data('id');
+    task.remove();
     $.ajax({
         method : 'DELETE',
         url : deleteUrl

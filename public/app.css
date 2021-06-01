@@ -85,6 +85,9 @@ li span:hover{
     background-color: rgb(47, 194, 84);
     margin-right: +150%;
     padding: 3px;
+    position: sticky;
+    top: 20px;
+    z-index: 1;
 }
 
 @media only screen and (max-width : 500px)
@@ -96,3 +99,5 @@ li span:hover{
         width: 100%;
     }
 }
+
+
