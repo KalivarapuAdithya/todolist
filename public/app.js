@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
     $.getJSON('/api/todos')
     .then(addTodos)
     .catch(function(err)
